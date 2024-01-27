@@ -4,7 +4,6 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.util.registry.Registry;
-
 import java.util.Collections;
 import java.util.List;
 
