@@ -150,7 +150,7 @@ public abstract class BlockLikeEntity extends Entity implements PostTickEntity {
      * The big kahuna. You likely don't need to override this method.
      * Instead, override the methods that it calls.
      */
-    public void postTick() {
+    public void incubus_Concern$postTick() {
         if (this.blockState.isAir()) {
             this.discard();
             return;

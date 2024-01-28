@@ -3,7 +3,6 @@ package net.id.incubus_core.mixin.client;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.id.incubus_core.misc.WorthinessChecker;
-import net.id.incubus_core.misc.WorthinessChecker.CapeType;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;

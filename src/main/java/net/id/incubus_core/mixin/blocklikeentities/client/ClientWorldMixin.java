@@ -22,7 +22,7 @@ public abstract class ClientWorldMixin {
     void postEntityTick(CallbackInfo ci) {
         entityList.forEach(entity -> {
             if (entity instanceof PostTickEntity postTickEntity) {
-                postTickEntity.postTick();
+                postTickEntity.incubus_Concern$postTick();
             }
         });
         BlockLikeSet.getAllSets().forEachRemaining(BlockLikeSet::postTick);

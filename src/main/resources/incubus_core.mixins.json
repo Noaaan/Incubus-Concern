@@ -3,14 +3,9 @@
   "minVersion": "0.8",
   "package": "net.id.incubus_core.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "net.id.incubus_core.mixin.Plugin",
+  "plugin": "net.id.incubus_core.mixin.IncubusCoreMixinPLugin",
   "mixins": [
-    "blocklikeentities.ServerWorldMixin",
-    "entity.BlockEntityMixin",
-    "entity.FoxEditorMixin",
-    "player.PlayerDropMixin",
-    "player.PlayerEntityMixin",
-    "player.PlayerManagerMixin"
+    "blocklikeentities.ServerWorldMixin"
   ],
   "client": [
     "blocklikeentities.client.ClientPlayerEntityMixin",
@@ -19,9 +14,7 @@
     "client.AnimationFrameAccessor",
     "client.AnimatorAccessor",
     "client.CapeMixin",
-    "client.InGameHudMixin",
     "client.InterpFixMixin",
-    "client.PlayerRendererMixin",
     "client.SpriteContentsAccessor"
   ],
   "injectors": {

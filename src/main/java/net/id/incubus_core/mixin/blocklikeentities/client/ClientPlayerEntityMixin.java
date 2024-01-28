@@ -25,7 +25,7 @@ public abstract class ClientPlayerEntityMixin implements PostTickEntity {
     }
 
     @Override
-    public void postTick() {
+    public void incubus_Concern$postTick() {
         if (incubus_core$sendMovement) {
             sendMovementPackets();
             incubus_core$sendMovement = false;

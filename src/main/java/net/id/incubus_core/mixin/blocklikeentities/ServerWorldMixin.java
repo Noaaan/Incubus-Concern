@@ -28,7 +28,7 @@ public abstract class ServerWorldMixin {
         if (this.idleTimeout < 300) {
             entityList.forEach(entityObj -> {
                 if (entityObj instanceof BlockLikeEntity entity) {
-                    entity.postTick();
+                    entity.incubus_Concern$postTick();
                 } else if (entityObj == null) {
                     IncubusCore.LOG.error("Started checking null entities in ServerWorldMixin::postEntityTick");
                 }

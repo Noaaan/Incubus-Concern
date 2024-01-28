@@ -105,7 +105,6 @@ public final class IngredientStack {
         return ingredients;
     }
 
-    @SuppressWarnings("all")
     public List<ItemStack> getStacks() {
         var stacks = ingredient.getMatchingStacks();
 
@@ -114,7 +113,7 @@ public final class IngredientStack {
 
         return Arrays.stream(stacks)
                 .peek(stack -> stack.setCount(count))
-                .peek(stack -> recipeViewNbt.ifPresent(nbt -> stack.setNbt(nbt)))
+                .peek(stack -> recipeViewNbt.ifPresent(stack::setNbt))
                 .collect(Collectors.toList());
     }
 

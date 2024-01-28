@@ -1,7 +1,6 @@
 package net.id.incubus_core.recipe;
 
 import net.id.incubus_core.*;
-import net.id.incubus_core.util.*;
 import net.minecraft.item.*;
 import net.minecraft.network.*;
 import net.minecraft.registry.*;
