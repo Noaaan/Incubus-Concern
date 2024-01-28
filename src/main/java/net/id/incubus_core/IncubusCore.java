@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.fabricmc.api.ModInitializer;
 import net.id.incubus_core.misc.WorthinessChecker;
 import net.id.incubus_core.recipe.matchbook.IncubusMatches;
-import net.id.incubus_core.util.UuidHelper;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 
@@ -17,8 +16,6 @@ public class IncubusCore implements ModInitializer {
 	public void onInitialize() {
 		WorthinessChecker.init();
 		IncubusMatches.init();
-
-		UuidHelper.findUuid("noaaan", uuid -> System.out.println(uuid.toString()));
 	}
 
 	public static Identifier locate(String path) {
