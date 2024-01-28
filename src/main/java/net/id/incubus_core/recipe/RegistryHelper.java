@@ -1,4 +1,4 @@
-package net.id.incubus_core.util;
+package net.id.incubus_core.recipe;
 
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

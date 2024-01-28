@@ -5,7 +5,6 @@ import com.google.gson.stream.*;
 import com.mojang.brigadier.exceptions.*;
 import net.id.incubus_core.*;
 import net.id.incubus_core.recipe.matchbook.*;
-import net.id.incubus_core.util.*;
 import net.minecraft.item.*;
 import net.minecraft.nbt.*;
 import net.minecraft.recipe.*;
