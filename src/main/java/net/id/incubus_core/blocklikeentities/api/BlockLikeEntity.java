@@ -336,6 +336,18 @@ public abstract class BlockLikeEntity extends Entity implements PostTickEntity {
                     blockEntity.markDirty();
                 }
             }
+            for (Direction dir : Direction.stream().toList()) {
+                var newState = this.blockState.getStateForNeighborUpdate(
+                        dir,
+                        this.world.getBlockState(blockPos.offset(dir)),
+                        this.world,
+                        blockPos,
+                        blockPos.offset(dir)
+                );
+                this.world.setBlockState(blockPos, newState);
+                this.blockState = newState;
+            }
+            world.createAndScheduleBlockTick(blockPos, this.blockState.getBlock(), 1);
             // Stop entities from clipping through the block when it's set
             this.postTickMoveEntities();
             return true;
