@@ -104,7 +104,6 @@ public class BlockLikeSet {
             }
             block.dropItem = false;
         }
-        this.entries.clear();
         this.remove();
     }
 
